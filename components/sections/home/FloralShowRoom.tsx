@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { Heading } from "@/components/ui/Heading";
 
 export const FloralShowRoom = () => {
   return (
@@ -15,7 +16,7 @@ export const FloralShowRoom = () => {
           />
         </div>
         <div className="col-span-4 mx-auto space-y-6 px-8 font-thin">
-          <h3 className="font-serif text-3xl font-semibold">Floral Showroom</h3>
+          <Heading>Floral Showroom</Heading>
           <p>
             Floral Showroom: RLM Affairs is a full-service florist serving North
             Georgia for 40 years. Our award winning designers offer exquisite

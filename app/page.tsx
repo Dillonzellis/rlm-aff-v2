@@ -1,6 +1,7 @@
 import { HeroVid } from "@/components/sections/home/HeroVid";
 import { Welcome } from "@/components/sections/home/Welcome";
 import { FloralShowRoom } from "@/components/sections/home/FloralShowRoom";
+import { SplitFeatures } from "@/components/sections/home/SplitFeatures";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroVid />
       <Welcome />
       <FloralShowRoom />
+      <SplitFeatures />
     </main>
   );
 }
