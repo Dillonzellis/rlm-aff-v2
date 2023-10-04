@@ -2,14 +2,14 @@ import { Container } from "@/components/Container";
 
 export const Welcome = () => {
   return (
-    <section className="border-b-4 border-b-gray-400 py-8">
+    <section className="border-b-[6px] border-b-zinc-300 py-10">
       <Container>
-        <div className="max-w-prose font-thin">
-          <h2 className="pb-2 font-serif text-5xl font-medium">
+        <div className="max-w-prose space-y-4 font-light">
+          <h2 className="font-serif text-5xl font-semibold text-zinc-900">
             Welcome to RLM Affairs
           </h2>
-          <div className="pb-4">
-            SEE A NEW SIDE OF THE CITY. ONLY AT PENDRY.
+          <div className="text-zinc-850 tracking-wide">
+            <em>SEE A NEW SIDE OF THE CITY. ONLY AT PENDRY.</em>
           </div>
           <p>
             Pendry Manhattan West is an understated, California-inspired

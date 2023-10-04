@@ -6,7 +6,7 @@ import { SplitFeatures } from "@/components/sections/home/SplitFeatures";
 export default function Home() {
   return (
     <main className="font-sans">
-      <div className="border-b-4 border-b-gray-400 bg-white py-4 text-center text-lg font-semibold text-gray-950">
+      <div className="border-b-4 border-b-gray-400 bg-white py-4 text-center font-serif text-xl font-semibold">
         RLM Affairs
       </div>
       <HeroVid />

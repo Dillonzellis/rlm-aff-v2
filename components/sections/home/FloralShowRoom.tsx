@@ -4,7 +4,7 @@ import { Heading } from "@/components/ui/Heading";
 
 export const FloralShowRoom = () => {
   return (
-    <section className="border-b-4 border-b-gray-400">
+    <section className="border-b-[6px] border-b-zinc-300">
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-8">
           <Image
@@ -15,7 +15,7 @@ export const FloralShowRoom = () => {
             className="h-[500px] object-cover"
           />
         </div>
-        <div className="col-span-4 mx-auto space-y-6 px-8 font-thin">
+        <div className="col-span-4 mx-auto space-y-6 px-8 font-light">
           <Heading>Floral Showroom</Heading>
           <p>
             Floral Showroom: RLM Affairs is a full-service florist serving North

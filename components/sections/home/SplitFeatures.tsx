@@ -30,7 +30,7 @@ const Feature = ({
       />
       <div className="space-y-4 px-8">
         <Heading>{title}</Heading>
-        <p className="font-thin">{body}</p>
+        <p>{body}</p>
         <ButtonLink href={btnHref}>{btnLabel}</ButtonLink>
       </div>
     </div>
