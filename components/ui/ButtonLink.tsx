@@ -4,10 +4,10 @@ type ButtonLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export const ButtonLink = ({ children, ...props }: ButtonLinkProps) => {
   return (
-    <a className="flex items-center gap-2 font-normal" {...props}>
+    <a className="flex items-center gap-4 font-normal" {...props}>
       {children}
       <span>
-        <BsArrowRight />
+        <BsArrowRight className="h-5 w-5" />
       </span>
     </a>
   );
