@@ -39,7 +39,7 @@ const Feature = ({
 
 export const SplitFeatures = () => {
   return (
-    <section className="grid grid-cols-2 gap-2">
+    <section className="grid grid-cols-2 gap-2 border-b-8 pb-8">
       <Feature
         imgSrc="/florist.jpeg"
         imgAlt=""
