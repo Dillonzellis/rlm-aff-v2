@@ -12,6 +12,12 @@ const config: Config = {
         sans: ["var(--font-mont)"],
         serif: ["var(--font-basker)"],
       },
+      colors: {
+        brandingNeutral: {
+          400:"var(--branding-neutral-400)",
+          700: "var(--branding-neutral-700)",
+        },
+      },
     },
   },
   plugins: [],
