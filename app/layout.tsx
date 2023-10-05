@@ -1,4 +1,4 @@
-import { Footer } from "@/components/sections/layout/Footer";
+import { Footer } from "@/components/containers/layout/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Baskervville, Montserrat } from "next/font/google";
