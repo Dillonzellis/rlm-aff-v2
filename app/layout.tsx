@@ -2,6 +2,7 @@ import { Footer } from "@/components/containers/layout/Footer";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Baskervville, Montserrat } from "next/font/google";
+import { Header } from "@/components/containers/layout/Header";
 
 const basker = Baskervville({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body
         className={`${basker.variable} ${mont.variable} bg-zinc-50 font-sans font-light text-zinc-800`}
       >
+        <Header />
         {children}
         <Footer />
       </body>
