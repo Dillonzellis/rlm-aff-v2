@@ -5,7 +5,7 @@ export const Welcome = () => {
     <section className="border-b-[6px] border-b-zinc-300 py-10">
       <Container>
         <div className="max-w-prose space-y-4 font-light">
-          <h2 className="font-serif text-5xl font-semibold text-zinc-900">
+          <h2 className="font-serif text-5xl text-zinc-900">
             Welcome to RLM Affairs
           </h2>
           <div className="text-zinc-850 tracking-wide">
