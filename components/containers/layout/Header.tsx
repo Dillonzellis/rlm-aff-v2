@@ -11,7 +11,7 @@ const HeaderItem = ({ children, href, ariaLabel }: HeaderItemProps) => {
     <Link
       href={href}
       aria-label={ariaLabel}
-      className="text-sm font-medium uppercase"
+      className="text-sm font-medium uppercase hover:text-zinc-950"
     >
       {children}
     </Link>
@@ -20,7 +20,7 @@ const HeaderItem = ({ children, href, ariaLabel }: HeaderItemProps) => {
 
 export const Header = () => {
   return (
-    <div className="border-b-4 border-b-zinc-300 py-4 text-center ">
+    <div className="text-zinc-750 mx-auto w-[50rem] rounded-full bg-zinc-50/70 py-3 text-center backdrop-blur">
       <Link href="#content" className="sr-only focus:not-sr-only">
         Skip to main content
       </Link>
@@ -35,13 +35,12 @@ export const Header = () => {
         <HeaderItem href="/catering" ariaLabel="visit Catering Page">
           Catering
         </HeaderItem>
-        <Link href="/" aria-label="visit Home page">
-          <div className="font-serif text-2xl font-semibold">RLM Affairs</div>
-          <hr className="mx-auto my-1 max-w-[5rem]" />
-          <div className="text-sm italic">
-            &quot;Creating unforgettable moments,
-            <br /> one celebration at a time.&quot;
-          </div>
+        <Link
+          href="/"
+          aria-label="visit Home page"
+          className="font-serif text-3xl hover:text-zinc-950"
+        >
+          RLM Affairs
         </Link>
         <HeaderItem href="/florals" ariaLabel="visit Florals page">
           Florals
