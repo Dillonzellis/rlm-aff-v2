@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Heading } from "@/components/ui/Heading";
 
 const VenuePage = () => {
   return (
@@ -14,9 +15,9 @@ const VenuePage = () => {
         <div className="relative">
           <div className="absolute left-4 top-1/2 w-[40%] -translate-y-1/2 rounded-full border-t-2 border-t-zinc-400/50"></div>
           <div className="absolute right-4 top-1/2 w-[40%] -translate-y-1/2 border-t-2 border-t-zinc-400/50"></div>
-          <h1 className="mx-auto pb-4 text-center font-serif text-5xl">
+          <Heading level="h1" size="large" className="pb-4 text-center">
             Venue
-          </h1>
+          </Heading>
         </div>
         <p className="mx-auto max-w-[90ch] text-center">
           Pendry Manhattan West is a central spot for casual gatherings, not so
