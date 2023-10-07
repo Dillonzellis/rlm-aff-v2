@@ -7,7 +7,7 @@ export const BabyCakesHome = () => {
     <section className="border-b-[6px] border-b-zinc-300">
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-4 mx-auto space-y-6 px-8 font-light">
-          <Heading>Event Planning</Heading>
+          <Heading level="h3">Event Planning</Heading>
           <p>
             At RLM Affairs we capture your vision and create the memories you
             have dreamed. Whether these dreams include something you have

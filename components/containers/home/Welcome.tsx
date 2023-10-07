@@ -1,11 +1,14 @@
 import { Container } from "@/components/Container";
+import { Heading } from "@/components/ui/Heading";
 
 export const Welcome = () => {
   return (
     <section className="border-b-[6px] border-b-zinc-300 py-10">
       <Container>
         <div className="max-w-prose space-y-4 font-light">
-          <h2 className="text-5xl text-zinc-900">Welcome to RLM Affairs</h2>
+          <Heading level="h1" size="large">
+            Welcome to RLM Affairs
+          </Heading>
           <div className="text-zinc-850 tracking-wide">
             <em>SEE A NEW SIDE OF THE CITY. ONLY AT PENDRY.</em>
           </div>

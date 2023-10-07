@@ -16,7 +16,7 @@ export const FloralShowRoom = () => {
           />
         </div>
         <div className="col-span-4 mx-auto space-y-6 px-8 font-light">
-          <Heading>Floral Showroom</Heading>
+          <Heading level="h3">Floral Showroom</Heading>
           <p>
             Floral Showroom: RLM Affairs is a full-service florist serving North
             Georgia for 40 years. Our award winning designers offer exquisite

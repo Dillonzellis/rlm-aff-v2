@@ -29,7 +29,7 @@ const Feature = ({
         className="mb-6 max-h-[450px] w-full object-cover"
       />
       <div className="space-y-4 px-8">
-        <Heading>{title}</Heading>
+        <Heading level="h3">{title}</Heading>
         <p>{body}</p>
         <ButtonLink href={btnHref}>{btnLabel}</ButtonLink>
       </div>
