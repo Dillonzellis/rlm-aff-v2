@@ -20,7 +20,7 @@ const HeaderItem = ({ children, href, ariaLabel }: HeaderItemProps) => {
 
 export const Header = () => {
   return (
-    <div className="text-zinc-750 border-b-4 border-b-zinc-400 bg-zinc-50 py-3 text-center backdrop-blur">
+    <div className="text-zinc-750 py-3 text-center ">
       <Link href="#content" className="sr-only focus:not-sr-only">
         Skip to main content
       </Link>
@@ -38,7 +38,7 @@ export const Header = () => {
         <Link
           href="/"
           aria-label="visit Home page"
-          className="font-serif text-3xl hover:text-zinc-950"
+          className=" text-3xl hover:text-zinc-950"
         >
           RLM Affairs
         </Link>
