@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type HeaderItemProps = {
@@ -35,12 +36,8 @@ export const Header = () => {
         <HeaderItem href="/catering" ariaLabel="visit Catering Page">
           Catering
         </HeaderItem>
-        <Link
-          href="/"
-          aria-label="visit Home page"
-          className=" text-3xl hover:text-zinc-950"
-        >
-          RLM Affairs
+        <Link href="/" aria-label="visit Home page">
+          <Image src="/logo.png" alt="" width={100} height={100} />
         </Link>
         <HeaderItem href="/florals" ariaLabel="visit Florals page">
           Florals
