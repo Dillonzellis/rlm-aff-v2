@@ -4,19 +4,21 @@ import { Heading } from "@/components/ui/Heading";
 
 export const FloralShowRoom = () => {
   return (
-    <section className="border-b-[6px] border-b-zinc-300">
+    <section className="">
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-8">
           <Image
-            src="/lanterns-1.jpg"
+            src="/floral-showroom.jpeg"
             alt="lanterns"
             width={830}
-            height={665}
-            className="h-[500px] object-cover"
+            height={700}
+            className="min-h-[700px] object-cover"
           />
         </div>
         <div className="col-span-4 mx-auto space-y-6 px-8 font-light">
-          <Heading level="h3">Floral Showroom</Heading>
+          <Heading level="h3" size="large" className="text-6xl font-thin">
+            Floral Showroom
+          </Heading>
           <p>
             Floral Showroom: RLM Affairs is a full-service florist serving North
             Georgia for 40 years. Our award winning designers offer exquisite
