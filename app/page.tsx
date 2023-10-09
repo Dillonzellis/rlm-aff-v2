@@ -1,8 +1,6 @@
 import { HeroVid } from "@/components/containers/home/HeroVid";
 import { Welcome } from "@/components/containers/home/Welcome";
-import { FloralShowRoom } from "@/components/containers/home/FloralShowRoom";
 import { CTA } from "@/components/containers/home/CTA";
-import { NewFeature } from "@/components/containers/home/NewFeature";
 import { FullHeightImageSection } from "@/components/containers/layout/FullHeightImageSection";
 
 export default function Home() {
