@@ -19,7 +19,7 @@ export const Welcome = () => {
             <div className="text-zinc-850 pb-4 tracking-wide">
               <em>Where love and celebration come together beautifully.</em>
             </div>
-            <hr className="max-w-md pb-12" />
+            <hr className="max-w-md border-t-2 border-zinc-200 pb-12" />
             <p className="pb-14">
               Step into the world of RLM Affairs, where timeless elegance meets
               contemporary sophistication. From intimate celebrations to lavish
