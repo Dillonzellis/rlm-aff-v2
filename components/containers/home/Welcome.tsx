@@ -5,9 +5,9 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 
 export const Welcome = () => {
   return (
-    <section className="border-b-[6px] border-b-zinc-50 py-32">
+    <section className="py-28">
       <Container>
-        <div className="flex items-center gap-12">
+        <div className="flex items-center gap-24">
           <div className="font-light">
             <Heading
               level="h1"
@@ -16,11 +16,11 @@ export const Welcome = () => {
             >
               Welcome to RLM Affairs
             </Heading>
-            <div className="text-zinc-850 pb-2 tracking-wide">
+            <div className="text-zinc-850 pb-4 tracking-wide">
               <em>Where love and celebration come together beautifully.</em>
             </div>
-            <hr className="max-w-md pb-8" />
-            <p className="pb-10">
+            <hr className="max-w-md pb-12" />
+            <p className="pb-14">
               Step into the world of RLM Affairs, where timeless elegance meets
               contemporary sophistication. From intimate celebrations to lavish
               receptions, our dedicated team crafts bespoke experiences,
