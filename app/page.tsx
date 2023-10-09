@@ -4,6 +4,8 @@ import { FloralShowRoom } from "@/components/containers/home/FloralShowRoom";
 import { SplitFeatures } from "@/components/containers/home/SplitFeatures";
 import { BabyCakesHome } from "@/components/containers/home/BabyCakesHome";
 import { ImageRow } from "@/components/containers/home/ImageRow";
+import { CTA } from "@/components/containers/home/CTA";
+import { NewFeature } from "@/components/containers/home/NewFeature";
 
 export default function Home() {
   return (
@@ -11,8 +13,8 @@ export default function Home() {
       <HeroVid />
       <Welcome />
       <FloralShowRoom />
-      <SplitFeatures />
-      <BabyCakesHome />
+      <CTA />
+      <NewFeature />
       <ImageRow />
     </main>
   );

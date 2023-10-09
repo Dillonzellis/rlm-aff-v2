@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { SplitFeatures } from "@/components/containers/home/SplitFeatures";
+import { BabyCakesHome } from "@/components/containers/home/BabyCakesHome";
 import { Heading } from "@/components/ui/Heading";
 
 const VenuePage = () => {
@@ -27,6 +29,9 @@ const VenuePage = () => {
           to rooftop, every outing becomes an occasion.
         </p>
       </section>
+
+      <BabyCakesHome />
+      <SplitFeatures />
     </main>
   );
 };
