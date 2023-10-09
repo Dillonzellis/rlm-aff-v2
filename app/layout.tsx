@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${basker.variable} ${mont.variable} bg-zinc-50 font-sans font-light text-zinc-800`}
+        className={`${basker.variable} ${mont.variable} bg-zinc-50 font-sans font-light text-zinc-900`}
       >
         <Header />
         {children}
