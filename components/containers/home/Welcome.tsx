@@ -1,27 +1,39 @@
+import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Heading } from "@/components/ui/Heading";
+import { ButtonLink } from "@/components/ui/ButtonLink";
 
 export const Welcome = () => {
   return (
-    <section className="border-b-[6px] border-b-zinc-300 py-10">
+    <section className="border-b-[6px] border-b-zinc-50 py-32">
       <Container>
-        <div className="max-w-prose space-y-4 font-light">
-          <Heading level="h1" size="large">
-            Welcome to RLM Affairs
-          </Heading>
-          <div className="text-zinc-850 tracking-wide">
-            <em>SEE A NEW SIDE OF THE CITY. ONLY AT PENDRY.</em>
+        <div className="flex items-center gap-12">
+          <div className="font-light">
+            <Heading
+              level="h1"
+              size="large"
+              className="pb-8 text-8xl font-thin"
+            >
+              Welcome to RLM Affairs
+            </Heading>
+            <div className="text-zinc-850 pb-2 tracking-wide">
+              <em>Where love and celebration come together beautifully.</em>
+            </div>
+            <hr className="max-w-md pb-8" />
+            <p className="pb-10">
+              Step into the world of RLM Affairs, where timeless elegance meets
+              contemporary sophistication. From intimate celebrations to lavish
+              receptions, our dedicated team crafts bespoke experiences,
+              ensuring each moment is as unique as the love stories we
+              celebrate. Offering a curated suite of services from gourmet
+              catering, exquisite florals, meticulous event planning, to
+              creating magical receptions, RLM Affairs is your partner in
+              realizing your dream event. Experience luxury, experience RLM
+              Affairs.
+            </p>
+            <ButtonLink href="">Schedule A Tour</ButtonLink>
           </div>
-          <p>
-            Pendry Manhattan West is an understated, California-inspired
-            destination that blends elegance and ease with seamless style in the
-            very heart of the city. From the stunning signature façade anchoring
-            the Manhattan West neighborhood to the airy and relaxed interiors
-            that bring a sense of refined calm to your city stay to the highly
-            personalized luxury service and amenities that cater with style and
-            sophistication, we are an extension of the city’s always unique
-            energy with a pulse that is all our own.
-          </p>
+          <Image src="/logo-gold.png" alt="" height={400} width={400} />
         </div>
       </Container>
     </section>
