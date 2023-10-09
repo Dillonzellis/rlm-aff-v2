@@ -9,11 +9,7 @@ export const Welcome = () => {
       <Container>
         <div className="flex items-center gap-24">
           <div className="font-light">
-            <Heading
-              level="h1"
-              size="large"
-              className="pb-8 text-8xl font-thin"
-            >
+            <Heading level="h1" size="largest" weight="thin" className="pb-8">
               Welcome to RLM Affairs
             </Heading>
             <div className="text-zinc-850 pb-4 tracking-wide">

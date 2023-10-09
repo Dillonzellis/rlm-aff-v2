@@ -12,19 +12,31 @@ type HeadingProps = HeadingVariants & {
 const HeadingVariants = cva("", {
   variants: {
     size: {
+      largest: "text-8xl",
       large: "text-5xl text-zinc-900",
       medium: "text-3xl",
+    },
+    weight: {
+      light: "font-light",
+      thin: "font-thin",
     },
   },
   defaultVariants: {
     size: "medium",
+    weight: "light",
   },
 });
 
-export const Heading = ({ level, children, className, size }: HeadingProps) => {
+export const Heading = ({
+  level,
+  children,
+  className,
+  size,
+  weight,
+}: HeadingProps) => {
   const TagName = level as keyof JSX.IntrinsicElements;
   return (
-    <TagName className={cn(HeadingVariants({ size }), className)}>
+    <TagName className={cn(HeadingVariants({ size, weight }), className)}>
       {children}
     </TagName>
   );
