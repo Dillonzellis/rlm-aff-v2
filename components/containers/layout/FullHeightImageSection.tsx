@@ -32,11 +32,11 @@ export const FullHeightImageSection = ({
   );
 
   const contentComponent = (
-    <div className="mx-auto space-y-6 px-8">
-      <Heading level="h3" size="large" className="text-6xl font-thin">
+    <div className="mx-auto px-8">
+      <Heading level="h3" size="large" className="pb-10 text-6xl font-thin">
         {heading}
       </Heading>
-      <p>{body}</p>
+      <p className="pb-10 leading-8">{body}</p>
       <ButtonLink href={btnLink}>{btnText}</ButtonLink>
     </div>
   );
