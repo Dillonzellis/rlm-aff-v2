@@ -16,16 +16,13 @@ export const Welcome = () => {
               <em>Where love and celebration come together beautifully.</em>
             </div>
             <hr className="max-w-md border-t-2 border-zinc-200 pb-12" />
-            <p className="pb-14">
-              Step into the world of RLM Affairs, where timeless elegance meets
-              contemporary sophistication. From intimate celebrations to lavish
-              receptions, our dedicated team crafts bespoke experiences,
-              ensuring each moment is as unique as the love stories we
-              celebrate. Offering a curated suite of services from gourmet
-              catering, exquisite florals, meticulous event planning, to
-              creating magical receptions, RLM Affairs is your partner in
-              realizing your dream event. Experience luxury, experience RLM
-              Affairs.
+            <p className="pb-14 leading-8">
+              Step into the world of RLM Affairs, from intimate celebrations to
+              lavish receptions, our dedicated team crafts bespoke experiences,
+              ensuring each moment is as unique as the celebration. Offering a
+              curated suite of services from gourmet catering, exquisite
+              florals, meticulous event planning, to creating magical
+              receptions.
             </p>
             <ButtonLink href="">Schedule A Tour</ButtonLink>
           </div>
