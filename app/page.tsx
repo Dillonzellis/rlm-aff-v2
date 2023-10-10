@@ -8,21 +8,9 @@ export default function Home() {
     <main id="content">
       <HeroVid />
       <Welcome />
+
       <FullHeightImageSection
         imgLeft
-        imgSrc="/floral-showroom.jpeg"
-        imgAlt="floral"
-        heading="Floral Artist"
-        body="
-            RLM Affairs is a full-service florist serving North
-            Georgia for 40 years. Our award winning designers offer exquisite
-            attention to detail. Whether it’s a single rose or decor for an
-            entire Gala every bloom is hand picked and sourced eco friendly. "
-        btnLink="/"
-        btnText="Discover"
-      />
-      <CTA />
-      <FullHeightImageSection
         imgSrc="/venue-feature.jpeg"
         imgAlt=""
         heading="Venue Feature"
@@ -36,6 +24,31 @@ export default function Home() {
         btnLink="/"
         btnText="Discover"
       />
+
+      <CTA />
+
+      <FullHeightImageSection
+        imgSrc="/floral-showroom.jpeg"
+        imgAlt="floral"
+        heading="Floral Artist"
+        body="
+            RLM Affairs is a full-service florist serving North
+            Georgia for 40 years. Our award winning designers offer exquisite
+            attention to detail. Whether it’s a single rose or decor for an
+            entire Gala every bloom is hand picked and sourced eco friendly. "
+        btnLink="/"
+        btnText="Discover"
+      />
+
+      {/* Event Planning */}
+
+      {/* Catering */}
+
+      {/* Testimonials */}
+
+      {/* CTA */}
+
+      {/* Footer */}
     </main>
   );
 }
