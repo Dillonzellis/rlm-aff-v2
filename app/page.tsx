@@ -65,13 +65,30 @@ export default function Home() {
                 dignissimos ipsa ullam aliquam enim perferendis? Sed quas quod
                 expedita aliquid vitae quia eos!
               </p>
-              <ButtonLink href="">Learn More</ButtonLink>
+              <ButtonLink href="" className="self-start">
+                Learn More
+              </ButtonLink>
             </div>
           </div>
         </Container>
       </section>
 
       {/* Catering */}
+      <FullHeightImageSection
+        imgLeft
+        imgSrc="/venue-feature.jpeg"
+        imgAlt=""
+        heading="Catering Feature"
+        body="Floral Showroom: RLM Affairs is a full-service florist serving North
+        Georgia for 40 years. Our award winning designers offer exquisite
+        attention to detail. Whether it’s a single rose or decor for an
+        entire Gala every bloom is hand picked and sourced eco friendly. Our
+        retail storefront offers modern & unique items keeping everyone in
+        mind
+        "
+        btnLink="/"
+        btnText="Discover"
+      />
 
       {/* Testimonials */}
 
