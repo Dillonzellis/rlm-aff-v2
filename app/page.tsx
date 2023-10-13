@@ -45,7 +45,7 @@ export default function Home() {
       />
 
       {/* Event Planning */}
-      <section className="py-14">
+      <section className="py-24">
         <Container>
           <div className="grid grid-cols-2 items-center gap-8">
             <Image
@@ -53,7 +53,7 @@ export default function Home() {
               alt=""
               width={740}
               height={520}
-              className="max-h-[520px] w-full rounded-sm object-cover"
+              className="max-h-[820px] w-full rounded-sm object-cover"
             />
             <div className="flex h-full w-full flex-col justify-center space-y-8 bg-[#F2F5F5] px-12">
               <Heading level="h2" size="large" weight="thin">
