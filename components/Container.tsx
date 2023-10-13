@@ -10,7 +10,7 @@ const ContainerVariants = cva("mx-auto", {
   variants: {
     size: {
       full: "w-full",
-      wide: "max-w-[1920px]",
+      wide: "max-w-[1920px] px-12",
       regular: "max-w-[1200px]",
     },
   },

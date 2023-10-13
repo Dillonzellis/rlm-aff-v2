@@ -27,8 +27,8 @@ export const FullHeightImageSection = ({
       src={imgSrc}
       alt={imgAlt}
       width={1000}
-      height={1000}
-      className="h-[950px] w-full object-cover"
+      height={700}
+      className="min-h-[700px] w-full object-cover"
     />
   );
 
