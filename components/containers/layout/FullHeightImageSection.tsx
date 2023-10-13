@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Heading } from "@/components/ui/Heading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { Container } from "@/components/Container";
 
 type FullHeightImageSectionProps = {
   imgSrc: string;
@@ -25,9 +26,9 @@ export const FullHeightImageSection = ({
     <Image
       src={imgSrc}
       alt={imgAlt}
-      width={830}
-      height={700}
-      className="min-h-[700px] object-cover"
+      width={1000}
+      height={1000}
+      className="h-[950px] w-full object-cover"
     />
   );
 
@@ -43,19 +44,21 @@ export const FullHeightImageSection = ({
 
   return (
     <section>
-      <div className="grid grid-cols-12 items-center">
-        {imgLeft ? (
-          <>
-            <div className="col-span-8">{imgComponent}</div>
-            <div className="col-span-4">{contentComponent}</div>
-          </>
-        ) : (
-          <>
-            <div className="col-span-4">{contentComponent}</div>
-            <div className="col-span-8">{imgComponent}</div>
-          </>
-        )}
-      </div>
+      <Container>
+        <div className="grid grid-cols-12 items-center">
+          {imgLeft ? (
+            <>
+              <div className="col-span-8">{imgComponent}</div>
+              <div className="col-span-4">{contentComponent}</div>
+            </>
+          ) : (
+            <>
+              <div className="col-span-4">{contentComponent}</div>
+              <div className="col-span-8">{imgComponent}</div>
+            </>
+          )}
+        </div>
+      </Container>
     </section>
   );
 };
