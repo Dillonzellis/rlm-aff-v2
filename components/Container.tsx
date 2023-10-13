@@ -6,7 +6,7 @@ type ContainerVariants = VariantProps<typeof ContainerVariants>;
 
 type ContainerProps = HTMLAttributes<HTMLDivElement> & ContainerVariants;
 
-const ContainerVariants = cva("mx-auto px-10", {
+const ContainerVariants = cva("mx-auto", {
   variants: {
     size: {
       full: "w-full",
