@@ -1,18 +1,32 @@
 import { HTMLAttributes } from "react";
 import { cn } from "@/lib/utils";
+import { VariantProps, cva } from "class-variance-authority";
 
-type ContainerProps = HTMLAttributes<HTMLDivElement>;
+type ContainerVariants = VariantProps<typeof ContainerVariants>;
+
+type ContainerProps = HTMLAttributes<HTMLDivElement> & ContainerVariants;
+
+const ContainerVariants = cva("mx-auto px-10", {
+  variants: {
+    size: {
+      full: "w-full",
+      wide: "max-w-[1920px]",
+      regular: "max-w-[1200px]",
+    },
+  },
+  defaultVariants: {
+    size: "wide",
+  },
+});
 
 export const Container = ({
   children,
   className,
+  size,
   ...props
 }: ContainerProps) => {
   return (
-    <div
-      className={cn("mx-auto w-full max-w-[1200px] px-10", className)}
-      {...props}
-    >
+    <div className={cn(ContainerVariants({ size }), className)} {...props}>
       {children}
     </div>
   );
