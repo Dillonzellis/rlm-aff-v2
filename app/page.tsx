@@ -76,7 +76,7 @@ export default function Home() {
       {/* Catering */}
       <FullHeightImageSection
         imgLeft
-        imgSrc="/venue-feature.jpeg"
+        imgSrc="/catering-feature.jpeg"
         imgAlt=""
         heading="Catering Feature"
         body="Floral Showroom: RLM Affairs is a full-service florist serving North
