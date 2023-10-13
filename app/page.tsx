@@ -91,8 +91,21 @@ export default function Home() {
       />
 
       {/* Testimonials */}
+      <section className="py-28">
+        <Container>
+          <div>
+            <div>Testimonial Cards</div>
+          </div>
+        </Container>
+      </section>
+
+      {/* Marquee */}
+      <section className="py-28">
+        <div>Marquee section</div>
+      </section>
 
       {/* CTA */}
+      <CTA />
 
       {/* Footer */}
     </main>
