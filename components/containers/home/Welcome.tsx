@@ -6,7 +6,7 @@ import { ButtonLink } from "@/components/ui/ButtonLink";
 export const Welcome = () => {
   return (
     <section className="py-28">
-      <Container>
+      <Container size="regular">
         <div className="flex items-center gap-24">
           <div className="font-light">
             <Heading level="h1" size="largest" weight="thin" className="pb-8">
