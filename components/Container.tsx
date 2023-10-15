@@ -10,8 +10,8 @@ const ContainerVariants = cva("mx-auto", {
   variants: {
     size: {
       full: "w-full",
-      wide: "max-w-[1920px] px-12",
-      regular: "max-w-[1200px]",
+      wide: "max-w-[1920px]",
+      regular: "max-w-[1200px] px-8",
     },
   },
   defaultVariants: {
