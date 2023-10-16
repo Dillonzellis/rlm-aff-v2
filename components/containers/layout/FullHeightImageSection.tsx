@@ -26,15 +26,15 @@ export const FullHeightImageSection = ({
     <Image
       src={imgSrc}
       alt={imgAlt}
-      width={1000}
-      height={700}
-      className="min-h-[700px] w-full object-cover"
+      width={850}
+      height={500}
+      className="h-[650px] w-full object-cover"
     />
   );
 
   const contentComponent = (
     <div className="mx-auto px-8">
-      <Heading level="h3" size="large" className="pb-10 text-6xl font-thin">
+      <Heading level="h3" size="large" className="pb-10">
         {heading}
       </Heading>
       <p className="pb-10 leading-8">{body}</p>
