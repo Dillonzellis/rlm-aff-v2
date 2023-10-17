@@ -7,3 +7,8 @@
   /* --branding-neutral-700: #2f3c48; */
   --branding-neutral-700: #2f3c48;
 }
+
+body {
+  background-image: url("/paper-bg-50.png");
+  background-repeat: repeat;
+}
