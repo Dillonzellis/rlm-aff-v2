@@ -2,10 +2,11 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 import { Heading } from "@/components/ui/Heading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
+import { Section } from "@/components/Section";
 
 export const Welcome = () => {
   return (
-    <section className="relative border-b-[6px] border-t-[6px] py-28">
+    <Section border="borderTop" className="relative">
       <Image
         src="/leaves-top.png"
         alt=""
@@ -43,6 +44,6 @@ export const Welcome = () => {
           <Image src="/logo-gold.png" alt="" height={400} width={400} />
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
