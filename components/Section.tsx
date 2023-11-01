@@ -12,10 +12,11 @@ const SectionVariants = cva("", {
       none: "",
       borderTop: "border-t-[6px]",
       borderBottom: "border-b-[6px]",
-      borderBoth: "border-[6px]",
+      borderBoth: "border-t-[6px] border-b-[6px]",
     },
     padding: {
       normal: "py-28",
+      none: "",
     },
   },
   defaultVariants: {
