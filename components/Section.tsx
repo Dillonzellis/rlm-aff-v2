@@ -33,11 +33,11 @@ export const Section = ({
   ...props
 }: SectionProps) => {
   return (
-    <div
+    <section
       className={cn(SectionVariants({ border, padding }), className)}
       {...props}
     >
       {children}
-    </div>
+    </section>
   );
 };
