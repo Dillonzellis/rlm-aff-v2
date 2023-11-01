@@ -1,7 +1,9 @@
 import Image from "next/image";
+import type { ChildrenProps } from "@/lib/types";
 import { Heading } from "@/components/ui/Heading";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Container } from "@/components/Container";
+import { Section } from "@/components/Section";
 
 type FullHeightImageSectionProps = {
   imgSrc: string;
@@ -11,6 +13,10 @@ type FullHeightImageSectionProps = {
   btnLink: string;
   btnText: string;
   imgLeft?: boolean;
+};
+
+type ContentComponentProps = {
+  left?: boolean;
 };
 
 export const FullHeightImageSection = ({
@@ -32,33 +38,57 @@ export const FullHeightImageSection = ({
     />
   );
 
-  const contentComponent = (
-    <div className="mx-auto px-8">
-      <Heading level="h3" size="large" className="pb-10">
-        {heading}
-      </Heading>
-      <p className="pb-10 leading-8">{body}</p>
-      <ButtonLink href={btnLink}>{btnText}</ButtonLink>
-    </div>
-  );
+  const ContentWrapper = ({ children }: ChildrenProps) => {
+    return (
+      <div className="relative col-span-4 flex h-full items-center">
+        {children}
+      </div>
+    );
+  };
+
+  const ContentComponent = ({ left }: ContentComponentProps) => {
+    const imgPositionClass = left ? "left-0" : "right-0";
+    const imgClass = `absolute ${imgPositionClass} top-0`;
+
+    return (
+      <div className="mx-auto px-8">
+        <Image
+          src="/leaves-1.png"
+          alt=""
+          width={73}
+          height={95}
+          className={imgClass}
+        />
+        <Heading level="h3" size="large" className="pb-10">
+          {heading}
+        </Heading>
+        <p className="pb-10 leading-8">{body}</p>
+        <ButtonLink href={btnLink}>{btnText}</ButtonLink>
+      </div>
+    );
+  };
 
   return (
-    <section>
+    <Section padding="none">
       <Container>
         <div className="grid grid-cols-12 items-center">
           {imgLeft ? (
             <>
               <div className="col-span-8">{imgComponent}</div>
-              <div className="col-span-4">{contentComponent}</div>
+              <ContentWrapper>
+                <ContentComponent />
+              </ContentWrapper>
             </>
           ) : (
             <>
-              <div className="col-span-4">{contentComponent}</div>
+              <ContentWrapper>
+                <ContentComponent left />
+              </ContentWrapper>
               <div className="col-span-8">{imgComponent}</div>
             </>
           )}
         </div>
       </Container>
-    </section>
+    </Section>
   );
 };
