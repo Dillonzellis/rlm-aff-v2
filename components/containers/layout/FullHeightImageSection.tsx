@@ -6,6 +6,7 @@ import { Container } from "@/components/Container";
 import { Section } from "@/components/Section";
 
 type FullHeightImageSectionProps = {
+  border?: "none" | "borderTop" | "borderBottom" | "borderBoth";
   imgSrc: string;
   imgAlt: string;
   heading: string;
@@ -20,6 +21,7 @@ type ContentComponentProps = {
 };
 
 export const FullHeightImageSection = ({
+  border,
   imgLeft = false,
   imgSrc,
   imgAlt,
@@ -69,7 +71,7 @@ export const FullHeightImageSection = ({
   };
 
   return (
-    <Section padding="none">
+    <Section padding="none" border={border}>
       <Container>
         <div className="grid grid-cols-12 items-center">
           {imgLeft ? (
