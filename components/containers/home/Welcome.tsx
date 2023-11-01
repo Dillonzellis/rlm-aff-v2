@@ -12,14 +12,14 @@ export const Welcome = () => {
         alt=""
         width={867}
         height={327}
-        className="absolute left-0 top-0 -z-10"
+        className="absolute left-0 top-0 -z-10 max-w-[500px]"
       />
       <Image
         src="/leaves-right.png"
         alt=""
         width={473}
         height={612}
-        className="absolute bottom-0 right-0 -z-10 h-full"
+        className="absolute bottom-0 right-0 -z-10 max-w-[200px]"
       />
       <Container size="regular">
         <div className="z-10 flex items-center gap-20">
