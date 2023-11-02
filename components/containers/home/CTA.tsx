@@ -1,15 +1,11 @@
+import { Section } from "@/components/Section";
 import { Heading } from "@/components/ui/Heading";
 
 export const CTA = () => {
   return (
-    <section className="py-36">
+    <Section border="none">
       <div className="mx-auto">
-        <Heading
-          level="h2"
-          size="large"
-          weight="thin"
-          className="pb-4 text-center"
-        >
+        <Heading level="h2" size="large" className="pb-4 text-center">
           Elevate Your Experience
         </Heading>
         <hr className="mx-auto max-w-[80px] border-t-2 border-zinc-200 pb-4" />
@@ -19,6 +15,6 @@ export const CTA = () => {
           nothing short of extraordinary.
         </p>
       </div>
-    </section>
+    </Section>
   );
 };
